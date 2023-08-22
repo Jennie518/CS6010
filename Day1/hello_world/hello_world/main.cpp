@@ -8,6 +8,10 @@
 #include <iostream>
 
 int main(){
-    std::cout << 2+2 << std::endl;
+    int x;
+    std::cin >>x;
+    int y =2;
+    int res=x+y;
+    std::cout <<"your result is "<<res << std::endl;
     return 0;
 }
