@@ -15,7 +15,7 @@ int main(int argc, const char * argv[]) {
     double res;
     std::cout <<"Type in the driving distance in miles: ";
     std::cin >>driving_distance;
-    std::cout <<"Type in mpg: 57";
+    std::cout <<"Type in mpg: ";
     std::cin >>mpg;
     std::cout <<"Type in cost of per gallon in dollars: ";
     std::cin >>cost_per_gallon;
