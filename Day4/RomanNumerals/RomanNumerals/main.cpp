@@ -28,33 +28,4 @@ int main(int argc, const char * argv[]) {
     }
     return 0;
 }
-    
-    /*
-     if (input_num % 1000 >= 0){
-     int mul= input_num / 1000;
-     output +='M' *mul;
-     remains = input_num % 1000;
-     }else if (input_num % 900 >=0){
-     int mul = input_num/900;
-     output +='CM' * mul;
-     remains = input_num % 900;
-     }else if (input_num % 500 > 0){
-     int mul = input_num/500;
-     output +='D' * mul;
-     remains = input_num % 500;
-     }else if (input_num % 400 > 0){
-     output +='CD';
-     remains = input_num % 400 > 0;
-     }while (input_num % 100){
-     output += 'C';
-     remains =input_num % 100;
-     }while (input_num % 90){
-     output += 'XC';
-     }while(input_num % 50){
-     output += 'L';
-     }
-     std::cout << output;
-     
-     return 0;
-     }
-     */
+ 
