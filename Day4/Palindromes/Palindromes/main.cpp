@@ -1,8 +1,7 @@
-//
+//  Partner is XiaoHan Chen
+//  Created by YIJUN ZHAN
 //  main.cpp
 //  Palindromes
-//
-//  Created by Yijun Zhan on 8/24/23.
 //
 
 #include <iostream>
