@@ -6,7 +6,7 @@
 //
 
 #include <iostream>
-#include <istream>
+#include <string>
 int main(int argc, const char * argv[]) {
     int input_num;
     std::string output;

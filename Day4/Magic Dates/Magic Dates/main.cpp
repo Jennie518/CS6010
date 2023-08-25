@@ -6,7 +6,7 @@
 //  My partner is XiaoHan Chen
 
 #include <iostream>
-
+#include <string>
 int main(int argc, const char * argv[]) {
     std::string In_inputDate;
     std::cout << "Enter a date:" << std::endl;
