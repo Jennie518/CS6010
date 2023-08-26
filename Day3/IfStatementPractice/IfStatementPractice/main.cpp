@@ -31,6 +31,9 @@ int main(int argc, const char * argv[]) {
         cout <<"You are a part of generation X " <<endl;
     }
     else if (age >=20){
+        cout <<"You are a part of millennial " <<endl;
+    }
+    else{
         cout <<"You are a part of iKid " <<endl;
     }
     return 0;
