@@ -7,11 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		01C08E492A9D164E00154931 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 01C08E482A9D164E00154931 /* main.cpp */; };
+		01C08E7F2A9D5C0700154931 /* VectorUtil.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 01C08E7C2A9D5C0700154931 /* VectorUtil.cpp */; };
+		01C08E802A9D5C0700154931 /* VectorTest.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 01C08E7D2A9D5C0700154931 /* VectorTest.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
-		01C08E432A9D164E00154931 /* CopyFiles */ = {
+		01C08E702A9D5A9A00154931 /* CopyFiles */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
 			dstPath = /usr/share/man/man1/;
@@ -23,12 +24,14 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		01C08E452A9D164E00154931 /* LetterHelpers.hpp */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = LetterHelpers.hpp; sourceTree = BUILT_PRODUCTS_DIR; };
-		01C08E482A9D164E00154931 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
+		01C08E722A9D5A9A00154931 /* VectorHW */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = VectorHW; sourceTree = BUILT_PRODUCTS_DIR; };
+		01C08E7C2A9D5C0700154931 /* VectorUtil.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = VectorUtil.cpp; sourceTree = SOURCE_ROOT; };
+		01C08E7D2A9D5C0700154931 /* VectorTest.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = VectorTest.cpp; sourceTree = SOURCE_ROOT; };
+		01C08E7E2A9D5C0700154931 /* VectorUtil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VectorUtil.h; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		01C08E422A9D164E00154931 /* Frameworks */ = {
+		01C08E6F2A9D5A9A00154931 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -38,65 +41,67 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		01C08E3C2A9D164E00154931 = {
+		01C08E692A9D5A9A00154931 = {
 			isa = PBXGroup;
 			children = (
-				01C08E472A9D164E00154931 /* LetterHelpers.hpp */,
-				01C08E462A9D164E00154931 /* Products */,
+				01C08E742A9D5A9A00154931 /* VectorHW */,
+				01C08E732A9D5A9A00154931 /* Products */,
 			);
 			sourceTree = "<group>";
 		};
-		01C08E462A9D164E00154931 /* Products */ = {
+		01C08E732A9D5A9A00154931 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				01C08E452A9D164E00154931 /* LetterHelpers.hpp */,
+				01C08E722A9D5A9A00154931 /* VectorHW */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		01C08E472A9D164E00154931 /* LetterHelpers.hpp */ = {
+		01C08E742A9D5A9A00154931 /* VectorHW */ = {
 			isa = PBXGroup;
 			children = (
-				01C08E482A9D164E00154931 /* main.cpp */,
+				01C08E7D2A9D5C0700154931 /* VectorTest.cpp */,
+				01C08E7C2A9D5C0700154931 /* VectorUtil.cpp */,
+				01C08E7E2A9D5C0700154931 /* VectorUtil.h */,
 			);
-			path = LetterHelpers.hpp;
+			path = VectorHW;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		01C08E442A9D164E00154931 /* LetterHelpers.hpp */ = {
+		01C08E712A9D5A9A00154931 /* VectorHW */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 01C08E4C2A9D164E00154931 /* Build configuration list for PBXNativeTarget "LetterHelpers.hpp" */;
+			buildConfigurationList = 01C08E792A9D5A9A00154931 /* Build configuration list for PBXNativeTarget "VectorHW" */;
 			buildPhases = (
-				01C08E412A9D164E00154931 /* Sources */,
-				01C08E422A9D164E00154931 /* Frameworks */,
-				01C08E432A9D164E00154931 /* CopyFiles */,
+				01C08E6E2A9D5A9A00154931 /* Sources */,
+				01C08E6F2A9D5A9A00154931 /* Frameworks */,
+				01C08E702A9D5A9A00154931 /* CopyFiles */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
-			name = LetterHelpers.hpp;
-			productName = LetterHelpers.hpp;
-			productReference = 01C08E452A9D164E00154931 /* LetterHelpers.hpp */;
+			name = VectorHW;
+			productName = VectorHW;
+			productReference = 01C08E722A9D5A9A00154931 /* VectorHW */;
 			productType = "com.apple.product-type.tool";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		01C08E3D2A9D164E00154931 /* Project object */ = {
+		01C08E6A2A9D5A9A00154931 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
 				LastUpgradeCheck = 1430;
 				TargetAttributes = {
-					01C08E442A9D164E00154931 = {
+					01C08E712A9D5A9A00154931 = {
 						CreatedOnToolsVersion = 14.3.1;
 					};
 				};
 			};
-			buildConfigurationList = 01C08E402A9D164E00154931 /* Build configuration list for PBXProject "LetterHelpers.hpp" */;
+			buildConfigurationList = 01C08E6D2A9D5A9A00154931 /* Build configuration list for PBXProject "VectorHW" */;
 			compatibilityVersion = "Xcode 14.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -104,29 +109,30 @@
 				en,
 				Base,
 			);
-			mainGroup = 01C08E3C2A9D164E00154931;
-			productRefGroup = 01C08E462A9D164E00154931 /* Products */;
+			mainGroup = 01C08E692A9D5A9A00154931;
+			productRefGroup = 01C08E732A9D5A9A00154931 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				01C08E442A9D164E00154931 /* LetterHelpers.hpp */,
+				01C08E712A9D5A9A00154931 /* VectorHW */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXSourcesBuildPhase section */
-		01C08E412A9D164E00154931 /* Sources */ = {
+		01C08E6E2A9D5A9A00154931 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				01C08E492A9D164E00154931 /* main.cpp in Sources */,
+				01C08E7F2A9D5C0700154931 /* VectorUtil.cpp in Sources */,
+				01C08E802A9D5C0700154931 /* VectorTest.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin XCBuildConfiguration section */
-		01C08E4A2A9D164E00154931 /* Debug */ = {
+		01C08E772A9D5A9A00154931 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -184,7 +190,7 @@
 			};
 			name = Debug;
 		};
-		01C08E4B2A9D164E00154931 /* Release */ = {
+		01C08E782A9D5A9A00154931 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -235,7 +241,7 @@
 			};
 			name = Release;
 		};
-		01C08E4D2A9D164E00154931 /* Debug */ = {
+		01C08E7A2A9D5A9A00154931 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
@@ -243,7 +249,7 @@
 			};
 			name = Debug;
 		};
-		01C08E4E2A9D164E00154931 /* Release */ = {
+		01C08E7B2A9D5A9A00154931 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
@@ -254,25 +260,25 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		01C08E402A9D164E00154931 /* Build configuration list for PBXProject "LetterHelpers.hpp" */ = {
+		01C08E6D2A9D5A9A00154931 /* Build configuration list for PBXProject "VectorHW" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				01C08E4A2A9D164E00154931 /* Debug */,
-				01C08E4B2A9D164E00154931 /* Release */,
+				01C08E772A9D5A9A00154931 /* Debug */,
+				01C08E782A9D5A9A00154931 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		01C08E4C2A9D164E00154931 /* Build configuration list for PBXNativeTarget "LetterHelpers.hpp" */ = {
+		01C08E792A9D5A9A00154931 /* Build configuration list for PBXNativeTarget "VectorHW" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				01C08E4D2A9D164E00154931 /* Debug */,
-				01C08E4E2A9D164E00154931 /* Release */,
+				01C08E7A2A9D5A9A00154931 /* Debug */,
+				01C08E7B2A9D5A9A00154931 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
-	rootObject = 01C08E3D2A9D164E00154931 /* Project object */;
+	rootObject = 01C08E6A2A9D5A9A00154931 /* Project object */;
 }

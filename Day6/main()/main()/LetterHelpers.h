@@ -9,4 +9,8 @@
 #define LetterHelpers_h
 
 
+bool IsTerminator(char c);
+bool IsPunctuation(char c);
+bool IsVowel(char c);
+
 #endif /* LetterHelpers_h */

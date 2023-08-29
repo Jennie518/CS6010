@@ -9,5 +9,9 @@
 #define WordHelpers_hpp
 
 #include <stdio.h>
+#include <iostream>
+int NumWords(std::string s);
+double AverageWordLength(std::string s);
+double AverageVowelsPerWord(std::string s);
 
 #endif /* WordHelpers_hpp */
