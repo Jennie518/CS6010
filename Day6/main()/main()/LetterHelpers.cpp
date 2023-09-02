@@ -5,7 +5,6 @@
 //  Created by 詹怡君 on 8/28/23.
 //
 
-#include "LetterHelpers.hpp"
 #include <iostream>
 
 
