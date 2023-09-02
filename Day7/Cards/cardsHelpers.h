@@ -9,11 +9,12 @@
 #define cardsHelpers_h
 #include <stdio.h>
 #include <vector>
+#include <string>
 
 
 struct cardDeck{
     int num;
-    char c;
+    std::string suit;
 };
 void printCards(std::vector<cardDeck> cards);
 std::vector<cardDeck> creatDeck();

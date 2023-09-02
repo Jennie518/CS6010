@@ -128,7 +128,8 @@ int FindMin( vector<int> input )
             return true;
         }
         for(int i = 0; i < input.size()-1; i++){
-            if(input[i] > input[i+1]){  //why it isn't work when 
+            if(input[i] > input[i+1]){
+                //avoid out of bounds,i < input.size()-1
                 return false;
             }
         }

@@ -7,17 +7,15 @@
 #include <iostream>
 #include <vector>
 
-struct Politician{
-    std::string name;
-    std::string affiliation;
-    std::string level;
-};
+
 
 std::vector<Politician>Javacans(std::vector<Politician> allpolitician){
     std::vector<Politician> javacansPoliticians;
-    for(Politician p:allpolitician){
+    for(Politician p:allpolitician){ //iterate object p in allpolitician
         if (p.affiliation == "Javacans"){
+            //affiliation value of object p
             javacansPoliticians.push_back(p);
+            //push_back is add an object to a vector
         }
     }
     return javacansPoliticians;

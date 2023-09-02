@@ -19,7 +19,7 @@ double AverageWordLength(std::string s){
     double words = 0.0;
     for(int i = 0; i < s.length(); i++){
         if (s[i]!=' ' && !IsPunctuation(s[i])){
-            words++;
+            words++;//count all the num of letters
         }
     }
     double result = words/static_cast<double>(NumWords(s));

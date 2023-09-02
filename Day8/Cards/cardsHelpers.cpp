@@ -5,20 +5,30 @@
 #include <cstdlib>
 #include <algorithm>
 
+std::vector<cardDeck> creatDeck(){ 
+    std::vector<cardDeck> deck;
+    std::vector<std::string> suits ={"H", "D", "C", "S"};
+    for(int i = 1; i <=13; i++){
+        //store num:1~13 in deck
+        for(int j = 0; j <=3; j++){
+            cardDeck card;   //create card object
+            card.num = i;
+            card.suit = suits[j]; //add num and suit to card
+            deck.push_back(card);  //pushback it to deck vector
+        }
+    }
+    return deck;
+}
 void printCards(std::vector<cardDeck> cards){
     //cards ={{1},{2},{3}...{13}}
     for(int i = 0; i <cards.size();i++){
             if(cards[i].num==14){
                 std::cout << "A";
-                //cards[1]={1,"A"}
             }else if (cards[i].num == 11){
                 std::cout << "J";
             }else if (cards[i].num == 12){
-                
-                //cards[12]={12,"Q"}
                 std::cout << "Q" ;
             }else if (cards[i].num == 13){
-
                 std::cout << "K" ;
             }else{
                 std::cout << cards[i].num ;
@@ -27,41 +37,20 @@ void printCards(std::vector<cardDeck> cards){
         if ((i+1) % 13 ==0){
             std::cout <<std::endl;
         }
-        if (cards[i].num >= 11 ){
-            std::string faceCard = (cards[i].num == 1) ? "A" :
-            (cards[i].num == 11) ? "J" :
-            (cards[i].num == 12) ? "Q" : "K";
-            cards[i].face = faceCard;
-            
-        }
-            
     }
 }
 
-std::vector<cardDeck> creatDeck(){
-    std::vector<cardDeck> deck;
-    std::vector<std::string> suits ={"H", "D", "C", "S"};
-    for(int i = 1; i <=13; i++){
-        //store num:1~13 in deck
-        for(int j = 0; j <=3; j++){
-            cardDeck card;
-            card.num = i;
-            card.suit = suits[j];
-            deck.push_back(card);
-        }
-    }
-    return deck;
-}
+
 
 void shuffle(std::vector<cardDeck>& deck){
     for(int i = deck.size()-1;i > 0;i--){
-        int j = std::rand() % (i+1); //find random number j in 0,i+1
+        int j = std::rand() % (i+1); //module can find random number from 0 to i+1
         std::swap(deck[i], deck[j]);
     }
 }
 bool isFlush(std::vector<cardDeck> hands){
     for(int i = 0;i < 5; i++){
-        if(hands[0].suit !=hands[i].suit){
+        if(hands[0].suit !=hands[i].suit){ //choose the first type of suit to compare the rest of suits
             return false;
         }
     }return true;
@@ -75,7 +64,7 @@ bool isStraight(std::vector<cardDeck> hands) {
     }
     sort(rankInhands.begin(),rankInhands.end());
     for (int i = 0; i < rankInhands.size()-1; i++) {
-        if (rankInhands[i+1] - rankInhands[i]!= 1) {
+        if (rankInhands[i+1] - rankInhands[i]!= 1) { // in numerical order
             return false;
         }
     }
@@ -102,10 +91,10 @@ bool isFullHouse(std::vector<cardDeck>& hands){
         rankInhands.push_back(card.num);
     }
     sort(rankInhands.begin(),rankInhands.end());
-    if(rankInhands[0]==rankInhands[2]){
-        return  rankInhands[0]==rankInhands[1]&&rankInhands[1]== rankInhands[2] && rankInhands[3]==rankInhands[4];
+    if(rankInhands[0]==rankInhands[2]){ //only two situations of ordered vector fit fullHouse condition, 3 + 2  or 2 + 3
+        return  rankInhands[0]==rankInhands[1]&&rankInhands[1]== rankInhands[2] && rankInhands[3]==rankInhands[4]; //first three cards in same numbers
     }else{
-        return  rankInhands[2]==rankInhands[3]&&rankInhands[3]== rankInhands[4] && rankInhands[0]==rankInhands[1];
+        return  rankInhands[2]==rankInhands[3]&&rankInhands[3]== rankInhands[4] && rankInhands[0]==rankInhands[1]; //first two cards in same numbers
     }
     
     

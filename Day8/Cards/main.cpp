@@ -38,7 +38,7 @@ int main(int argc, const char * argv[]) {
     std::cout<< "Full House percentage: "<< (double)fullHouseCount / totalHands * 100<< "%"<< std::endl;
 
     testCards();
-   // printCards(cards);
+    printCards(cards);
     
     return 0;
 }

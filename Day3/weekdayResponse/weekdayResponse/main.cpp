@@ -20,7 +20,7 @@ int main(int argc, const char * argv[]) {
     cout << "Whether you have young child or not(Y/N)"<<endl;
     cin >> response_child;
     have_youngchildren = (response_child =='Y');
-    if (!have_youngchildren && isHoliday && !isWeekday){
+    if (!have_youngchildren && isHoliday || !isWeekday){
         cout << "You can sleep"<<endl;
     }
     else{

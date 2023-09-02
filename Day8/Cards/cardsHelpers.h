@@ -15,7 +15,6 @@
 struct cardDeck{
     int num;
     std::string suit;
-    std::string face;
 //    bool operator<(const cardDeck& other) const {//paste from website
 //           if (num != other.num) {
 //               return num < other.num;

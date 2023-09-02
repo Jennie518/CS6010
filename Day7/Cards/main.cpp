@@ -10,6 +10,7 @@
 #include <vector>
 int main(int argc, const char * argv[]) {
     std::vector<cardDeck> cards = creatDeck();
+    //cards ={{1},{2},{3}...{13}}
     printCards(cards);
     return 0;
 }
