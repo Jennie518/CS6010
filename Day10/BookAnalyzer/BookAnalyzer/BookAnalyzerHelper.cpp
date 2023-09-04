@@ -45,7 +45,6 @@ void PrintKeyword(std::vector<std::string>allwords,std::string keyWord,int Numch
         }
     }
     std::cout << "The word "<<keyWord<<" appears "<<keyWordNum<<" times:"<< std::endl;
-    
     for(int i = 0; i<percentages.size();i++){
         std::cout<<"at "<<percentages[i]<<"%: "<<occurences[i]<<std::endl;
     }

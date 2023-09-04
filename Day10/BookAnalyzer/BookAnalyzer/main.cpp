@@ -57,7 +57,7 @@ int main(int argc, const char * argv[]) {
     authorName = getAuthor(allwords, authorPos, releaseDayPos);
    
     std::cout <<title<<" by "<<authorName<<":";
-    PrintKeyword(allwords,keyWord,Numchars);
+    
     std::string shortestWord;
     std::string longestWord;
     
@@ -67,6 +67,7 @@ int main(int argc, const char * argv[]) {
     longestWord = findLongestWord(allwords);
     
     std::cout << "The shortest word is \""<<shortestWord<<"\" and longest word is \""<<longestWord<<"\""<<std::endl;
+    PrintKeyword(allwords,keyWord,Numchars);
     //print title,author and release day
    
     
