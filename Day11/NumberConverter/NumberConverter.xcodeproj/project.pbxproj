@@ -7,12 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		0146B6702AA3948700B2CACA /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 0146B66F2AA3948700B2CACA /* main.cpp */; };
-		0146B6782AA4EDB100B2CACA /* BookAnalyzerHelper.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 0146B6762AA4EDB100B2CACA /* BookAnalyzerHelper.cpp */; };
+		0146B6862AA7A9C000B2CACA /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 0146B6852AA7A9C000B2CACA /* main.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
-		0146B66A2AA3948700B2CACA /* CopyFiles */ = {
+		0146B6802AA7A9C000B2CACA /* CopyFiles */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
 			dstPath = /usr/share/man/man1/;
@@ -24,14 +23,12 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		0146B66C2AA3948700B2CACA /* BookAnalyzer */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = BookAnalyzer; sourceTree = BUILT_PRODUCTS_DIR; };
-		0146B66F2AA3948700B2CACA /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
-		0146B6762AA4EDB100B2CACA /* BookAnalyzerHelper.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = BookAnalyzerHelper.cpp; sourceTree = "<group>"; };
-		0146B6772AA4EDB100B2CACA /* BookAnalyzerHelper.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = BookAnalyzerHelper.hpp; sourceTree = "<group>"; };
+		0146B6822AA7A9C000B2CACA /* NumberConverter */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = NumberConverter; sourceTree = BUILT_PRODUCTS_DIR; };
+		0146B6852AA7A9C000B2CACA /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		0146B6692AA3948700B2CACA /* Frameworks */ = {
+		0146B67F2AA7A9C000B2CACA /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -41,67 +38,65 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		0146B6632AA3948700B2CACA = {
+		0146B6792AA7A9C000B2CACA = {
 			isa = PBXGroup;
 			children = (
-				0146B66E2AA3948700B2CACA /* BookAnalyzer */,
-				0146B66D2AA3948700B2CACA /* Products */,
+				0146B6842AA7A9C000B2CACA /* NumberConverter */,
+				0146B6832AA7A9C000B2CACA /* Products */,
 			);
 			sourceTree = "<group>";
 		};
-		0146B66D2AA3948700B2CACA /* Products */ = {
+		0146B6832AA7A9C000B2CACA /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				0146B66C2AA3948700B2CACA /* BookAnalyzer */,
+				0146B6822AA7A9C000B2CACA /* NumberConverter */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		0146B66E2AA3948700B2CACA /* BookAnalyzer */ = {
+		0146B6842AA7A9C000B2CACA /* NumberConverter */ = {
 			isa = PBXGroup;
 			children = (
-				0146B66F2AA3948700B2CACA /* main.cpp */,
-				0146B6762AA4EDB100B2CACA /* BookAnalyzerHelper.cpp */,
-				0146B6772AA4EDB100B2CACA /* BookAnalyzerHelper.hpp */,
+				0146B6852AA7A9C000B2CACA /* main.cpp */,
 			);
-			path = BookAnalyzer;
+			path = NumberConverter;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		0146B66B2AA3948700B2CACA /* BookAnalyzer */ = {
+		0146B6812AA7A9C000B2CACA /* NumberConverter */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 0146B6732AA3948700B2CACA /* Build configuration list for PBXNativeTarget "BookAnalyzer" */;
+			buildConfigurationList = 0146B6892AA7A9C000B2CACA /* Build configuration list for PBXNativeTarget "NumberConverter" */;
 			buildPhases = (
-				0146B6682AA3948700B2CACA /* Sources */,
-				0146B6692AA3948700B2CACA /* Frameworks */,
-				0146B66A2AA3948700B2CACA /* CopyFiles */,
+				0146B67E2AA7A9C000B2CACA /* Sources */,
+				0146B67F2AA7A9C000B2CACA /* Frameworks */,
+				0146B6802AA7A9C000B2CACA /* CopyFiles */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
-			name = BookAnalyzer;
-			productName = BookAnalyzer;
-			productReference = 0146B66C2AA3948700B2CACA /* BookAnalyzer */;
+			name = NumberConverter;
+			productName = NumberConverter;
+			productReference = 0146B6822AA7A9C000B2CACA /* NumberConverter */;
 			productType = "com.apple.product-type.tool";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		0146B6642AA3948700B2CACA /* Project object */ = {
+		0146B67A2AA7A9C000B2CACA /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
 				LastUpgradeCheck = 1430;
 				TargetAttributes = {
-					0146B66B2AA3948700B2CACA = {
+					0146B6812AA7A9C000B2CACA = {
 						CreatedOnToolsVersion = 14.3.1;
 					};
 				};
 			};
-			buildConfigurationList = 0146B6672AA3948700B2CACA /* Build configuration list for PBXProject "BookAnalyzer" */;
+			buildConfigurationList = 0146B67D2AA7A9C000B2CACA /* Build configuration list for PBXProject "NumberConverter" */;
 			compatibilityVersion = "Xcode 14.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -109,30 +104,29 @@
 				en,
 				Base,
 			);
-			mainGroup = 0146B6632AA3948700B2CACA;
-			productRefGroup = 0146B66D2AA3948700B2CACA /* Products */;
+			mainGroup = 0146B6792AA7A9C000B2CACA;
+			productRefGroup = 0146B6832AA7A9C000B2CACA /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				0146B66B2AA3948700B2CACA /* BookAnalyzer */,
+				0146B6812AA7A9C000B2CACA /* NumberConverter */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXSourcesBuildPhase section */
-		0146B6682AA3948700B2CACA /* Sources */ = {
+		0146B67E2AA7A9C000B2CACA /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0146B6782AA4EDB100B2CACA /* BookAnalyzerHelper.cpp in Sources */,
-				0146B6702AA3948700B2CACA /* main.cpp in Sources */,
+				0146B6862AA7A9C000B2CACA /* main.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin XCBuildConfiguration section */
-		0146B6712AA3948700B2CACA /* Debug */ = {
+		0146B6872AA7A9C000B2CACA /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -190,7 +184,7 @@
 			};
 			name = Debug;
 		};
-		0146B6722AA3948700B2CACA /* Release */ = {
+		0146B6882AA7A9C000B2CACA /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -241,7 +235,7 @@
 			};
 			name = Release;
 		};
-		0146B6742AA3948700B2CACA /* Debug */ = {
+		0146B68A2AA7A9C000B2CACA /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
@@ -249,7 +243,7 @@
 			};
 			name = Debug;
 		};
-		0146B6752AA3948700B2CACA /* Release */ = {
+		0146B68B2AA7A9C000B2CACA /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
@@ -260,25 +254,25 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		0146B6672AA3948700B2CACA /* Build configuration list for PBXProject "BookAnalyzer" */ = {
+		0146B67D2AA7A9C000B2CACA /* Build configuration list for PBXProject "NumberConverter" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				0146B6712AA3948700B2CACA /* Debug */,
-				0146B6722AA3948700B2CACA /* Release */,
+				0146B6872AA7A9C000B2CACA /* Debug */,
+				0146B6882AA7A9C000B2CACA /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		0146B6732AA3948700B2CACA /* Build configuration list for PBXNativeTarget "BookAnalyzer" */ = {
+		0146B6892AA7A9C000B2CACA /* Build configuration list for PBXNativeTarget "NumberConverter" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				0146B6742AA3948700B2CACA /* Debug */,
-				0146B6752AA3948700B2CACA /* Release */,
+				0146B68A2AA7A9C000B2CACA /* Debug */,
+				0146B68B2AA7A9C000B2CACA /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
-	rootObject = 0146B6642AA3948700B2CACA /* Project object */;
+	rootObject = 0146B67A2AA7A9C000B2CACA /* Project object */;
 }

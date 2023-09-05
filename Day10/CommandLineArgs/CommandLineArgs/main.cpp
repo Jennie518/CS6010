@@ -10,6 +10,6 @@
 int main(int argc, const char * argv[]) {
     // insert code here...
 //    std::cout << argv[0] << argv[1]<<argv[2];
-    std::cout << argv;
+    std::cout << argv[0] <<argv[1]<<argv[2];
     return 0;
 }

@@ -53,14 +53,14 @@ void PrintKeyword(std::vector<std::string>allwords,std::string keyWord,int Numch
 std::string getTitle(std::vector<std::string>allwords,int titlePos,int authorPos){
     std::string title;
     for(int i=titlePos+1;i<authorPos;i++){
-         title += allwords[i];
+         title += allwords[i]+" ";
     }
     return title;
 }
 std::string getAuthor(std::vector<std::string>allwords,int authorPos,int releaseDayPos){
     std::string author;
     for(int i=authorPos+1;i<releaseDayPos;i++){
-      author += allwords[i];
+      author += allwords[i]+" ";
     }
     return author;
 }

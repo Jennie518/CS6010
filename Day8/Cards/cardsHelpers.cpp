@@ -120,7 +120,9 @@ void testCards(){
         {2,"H"},
         {3,"H"},
         {4,"H"},
-        {5,"H"}};
+        {5,"H"}
+        
+    };
     std::vector<cardDeck> fullHouse1 ={
         {1,"H"},
         {1,"H"},

@@ -25,16 +25,17 @@ void printCards(std::vector<cardDeck> cards){
                 std::cout << cards[i].num ;
             }
             std::cout << cards[i].suit << " ";
-        if ((i+1) % 13 ==0){
-            std::cout <<std::endl;
-        }
+//        if ((i+1) % 13 ==0){
+//            std::cout <<std::endl;
+//        }
             
     }
 }
 
 std::vector<cardDeck> creatDeck(){
     std::vector<cardDeck> deck;
-    std::vector<std::string> suits ={"H", "D", "C", "S"};
+    std::vector<std::string> suits ={"Heart", "Diamond", "Club", "Spade"};//H means heart,D for diamond,c for club, s for spade
+    
     for(int i = 1; i <=13; i++){
         //store num:1~13 in deck
         for(int j = 0; j <=3; j++){

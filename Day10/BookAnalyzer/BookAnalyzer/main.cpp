@@ -56,7 +56,7 @@ int main(int argc, const char * argv[]) {
     title = getTitle(allwords,titlePos, authorPos);
     authorName = getAuthor(allwords, authorPos, releaseDayPos);
    
-    std::cout <<title<<" by "<<authorName<<":";
+    std::cout <<title<<"by "<<authorName<<":";
     
     std::string shortestWord;
     std::string longestWord;

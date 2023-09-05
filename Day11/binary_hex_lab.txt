@@ -48,3 +48,14 @@ FF:255
 BEEF:48879
 F00D:61453
 
+What's the biggest number you can write using 8 binary digits? What is its value in decimal, and hexadecimal? What's the significance of this number?
+
+11111111
+2^8 - 1 = 255
+(FF)16
+Because 8 binary digits represent 1 byte of data.
+
+Try counting from 0 to 31 on your fingers using binary. How many fingers do you need?
+Five fingers
+
+
