@@ -7,6 +7,7 @@
 
 #include <iostream>
 
+#include "LetterHelpers.h"
 
 bool IsTerminator(char c){
     if(c=='.'||c=='!'||c=='?'){ //return (c=='.'||c=='!'||c=='?')directly
