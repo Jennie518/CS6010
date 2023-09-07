@@ -11,16 +11,11 @@
 #include <vector>
 #include <string>
 #include <algorithm>
+#include <random>
 
 struct cardDeck{
     int num;
     std::string suit;
-//    bool operator<(const cardDeck& other) const {//paste from website
-//           if (num != other.num) {
-//               return num < other.num;
-//           }
-//           return suit < other.suit;
-//       }
 };
 void printCards(std::vector<cardDeck> cards);
 

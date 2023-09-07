@@ -7,10 +7,10 @@
 
 std::vector<cardDeck> creatDeck(){ 
     std::vector<cardDeck> deck;
-    std::vector<std::string> suits ={"H", "D", "C", "S"};
-    for(int i = 1; i <=13; i++){
+    std::vector<std::string> suits ={"Heart", "Diamond", "Club", "Spade"};
+    for(int i = 1; i < 14; i++){
         //store num:1~13 in deck
-        for(int j = 0; j <=3; j++){
+        for(int j = 0; j < 4; j++){
             cardDeck card;   //create card object
             card.num = i;
             card.suit = suits[j]; //add num and suit to card
@@ -34,16 +34,16 @@ void printCards(std::vector<cardDeck> cards){
                 std::cout << cards[i].num ;
             }
             std::cout << cards[i].suit << " ";
-        if ((i+1) % 13 ==0){
-            std::cout <<std::endl;
-        }
+//        if ((i+1) % 13 ==0){
+//            std::cout <<std::endl;
+//        }
     }
 }
 
 
 
 void shuffle(std::vector<cardDeck>& deck){
-    for(int i = deck.size()-1;i > 0;i--){
+    for(int i = deck.size()-2;i > 0;i--){
         int j = std::rand() % (i+1); //module can find random number from 0 to i+1
         std::swap(deck[i], deck[j]);
     }
@@ -62,7 +62,7 @@ bool isStraight(std::vector<cardDeck> hands) {
     for(cardDeck card:hands){
         rankInhands.push_back(card.num);
     }
-    sort(rankInhands.begin(),rankInhands.end());
+    sort(rankInhands.begin(),rankInhands.end()); //change rankInhand directly
     for (int i = 0; i < rankInhands.size()-1; i++) {
         if (rankInhands[i+1] - rankInhands[i]!= 1) { // in numerical order
             return false;

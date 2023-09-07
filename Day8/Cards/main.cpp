@@ -11,6 +11,7 @@
 #include <vector>
 
 int main(int argc, const char * argv[]) {
+    std::srand(time(nullptr));
     std::vector<cardDeck> cards = creatDeck();
     //cards ={{1},{2},{3}...{13}}
     shuffle(cards);
