@@ -92,6 +92,12 @@ int main(int argc, const char * argv[]) {
     //part3
     
     countAndPrintCharacters("/Users/zhanyijun/Downloads/UTF-8-demo.txt");
+    int8_t a2 = 0xFF;
+    uint8_t b1 = a2;
+    uint8_t b2 = 0xFF;
+    std::cout<<"a: "<<+a2;
+    std::cout<<"B1: "<<+b1;
+    std::cout<<"b2: "<<+b2;
     return 0;
 }
 
