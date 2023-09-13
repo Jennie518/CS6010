@@ -35,7 +35,7 @@ void PrintKeyword(std::vector<std::string>allwords,std::string keyWord,int Numch
     for (int i = 0; i < allwords.size();i++){
         pos += allwords[i].size();
         if(allwords[i] == keyWord){
-            double Percentage = (static_cast<double>(pos) / Numchars) * 100;
+            double Percentage = (static_cast<double>(pos) / Numchars) * 100;//avoid losing digits
             percentages.push_back(Percentage);
             //get surrounding strings
             std::string surroundStr = allwords[i-1]+
@@ -56,7 +56,8 @@ std::string getTitle(std::vector<std::string>allwords,int titlePos,int authorPos
          title += allwords[i]+" ";
     }
     return title;
-}
+}//use position of author and title to get the title
+
 std::string getAuthor(std::vector<std::string>allwords,int authorPos,int releaseDayPos){
     std::string author;
     for(int i=authorPos+1;i<releaseDayPos;i++){

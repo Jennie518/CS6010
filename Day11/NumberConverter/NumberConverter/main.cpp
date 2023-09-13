@@ -14,7 +14,7 @@ int stringToInt(std::string inStr,int base){
     int value = 0;
     int startIndex = 0;
     if (inStr[0] == '-') {
-           startIndex = 1; //skip negative nums
+           startIndex = 1; //skip negative
        }
     if (base == 10 ||base == 2){
         for(int i = startIndex; i <inStr.length();i++){
@@ -110,24 +110,24 @@ int main(int argc, const char * argv[]) {
 //    int res = stringToInt("1010",2);
    //test code:
     if(stringToInt( intTobinaryString(-1), 2 ) == -1){
-        std::cout <<"binaryString test pass"<<std::endl;
+        std::cout <<"binaryString test passed"<<std::endl;
     }else{
         std::cout <<"binaryString test failed"<<std::endl;
     }
     if(stringToInt( intToDecimalString(-7), 10 ) == -7){
-        std::cout <<"Decimal test pass"<<std::endl;
+        std::cout <<"Decimal test passed"<<std::endl;
     }else{
         std::cout <<"test failed"<<std::endl;
     }
     
     
     if(stringToInt( intToHexadecimalString(-63), 16 ) == -63){
-        std::cout <<"Hexadecimal test pass"<<std::endl;
+        std::cout <<"Hexadecimal test passed"<<std::endl;
     }else{
         std::cout <<"Hexadecimal test failed"<<std::endl;
     }
     
-//    std::cout<<stringToInt("E1",16);
+    std::cout<<stringToInt("E1",16);
     return 0;
 }
 

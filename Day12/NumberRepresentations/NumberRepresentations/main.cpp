@@ -91,7 +91,7 @@ int main(int argc, const char * argv[]) {
     }
     //part3
     
-    countAndPrintCharacters("/Users/zhanyijun/Downloads/UTF-8-demo.txt");
+    countAndPrintCharacters("/Users/zhanyijun/Desktop/MSD/CS6010/Day12/NumberRepresentations/NumberRepresentations/UTF-8-demo.txt");
     int8_t a2 = 0xFF;
     uint8_t b1 = a2;
     uint8_t b2 = 0xFF;

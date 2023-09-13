@@ -14,7 +14,8 @@ int main(int argc, const char * argv[]) {
     std::vector<std::string> allwords;
     int NumWords = 0;
     int Numchars = 0;
-    std::string fileName = argv[1]; //read fileName and searcword in command line
+    std::string fileName = argv[1];
+    //read fileName and searcword in command line
     std::string keyWord = argv[2];
     std::ifstream fin (fileName);
     int titlePos = 0;
@@ -30,8 +31,8 @@ int main(int argc, const char * argv[]) {
     }//test whether input file open correctly
     while(fin >> singleWord){
         allwords.push_back(singleWord);
-        NumWords++;
-        Numchars += singleWord.length();
+        NumWords++;//count numbers of words
+        Numchars += singleWord.length(); //and numbers of all characters
     }
     for (int i = 0; i < allwords.size(); i++) {
            if (allwords[i] == "Title:") {
@@ -69,8 +70,6 @@ int main(int argc, const char * argv[]) {
     std::cout << "The shortest word is \""<<shortestWord<<"\" and longest word is \""<<longestWord<<"\""<<std::endl;
     PrintKeyword(allwords,keyWord,Numchars);
     //print title,author and release day
-   
-    
         return 0;
     }
 
