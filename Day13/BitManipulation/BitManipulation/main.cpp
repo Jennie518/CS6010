@@ -39,6 +39,10 @@ bool GetBit( uint32_t input, int b )
 {
   // TODO: Fill in. Do not return false.
     uint32_t m = 1 << b;
+    // Create a mask 'm' with the 'b'-th bit set to 1
+    
+    // Check if the 'b'-th bit in 'input' is 1 by performing a bitwise AND with the mask 'm'
+    // If the result is not equal to 0, the bit is set, so return true; otherwise, return false
     return (m & input)!=0;
 }
 
@@ -81,10 +85,13 @@ int NumBitsSet( uint32_t input )
     uint32_t m = 1;
     int bitSetCount = 0;
     while(input != 0){
+        // Check if the lowest bit of 'input' is set (1)
         if((m&input)!=0){
             bitSetCount++;
         }
         input >>= 1;
+        // Right shift 'input' by 1 bit to check the next bit
+
     }
   return bitSetCount;
 }
@@ -110,10 +117,13 @@ unsigned char GetByte( uint32_t input, int b )
 {
   // TODO: Fill in. Do not return 0.
     if (b < 0 || b > 3){
+    // Check if 'b' is out of the valid byte index range (0-3)
         return 0;
     }
     input >>= (b *8);
+    // Right shift 'input' by 'b' bytes (each byte is 8 bits)
     input &= 0x000000FF;
+    // Use a mask to extract the lowest byte (8 bits) from 'input'
    return input;
 }
 
@@ -139,12 +149,13 @@ unsigned char GetByte( uint32_t input, int b )
 uint32_t SetByte( uint32_t input, uint8_t value, int b )
 {
   // TODO: Fill in. Do not return 0.
-    std::vector<uint32_t> mask ={
+    std::vector<uint32_t> mask ={//find position of b in hex
         0xFFFFFF00,
         0xFFFF00FF,
         0xFF00FFFF,
         0x00FFFFFF,
     };
+    
     return (mask[b] & input)| value<<b*8;
     //each hex digit occupy 4 bits
     //use mask to find the value of b position and use value shift to this position and use OR to keep origin num and set value here.
@@ -187,9 +198,12 @@ uint32_t SetByte( uint32_t input, uint8_t value, int b )
 int Increment( uint32_t x ){
     uint32_t m1 = 1;
     while((m1 & x)!= 0){
+        // Toggle the lowest bit of x to 0
         x ^= m1;
+        // Shift the 1-bit mask to the left to check the next bit
         m1 <<= 1;
     }
+    // Toggle the lowest unset bit of x to 1
     x ^= m1;
   return x;
 }
